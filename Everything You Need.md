@@ -88,6 +88,12 @@ sqlmap -u "http://www.xyz.com/profile.aspx?id=1" --cookie="[cookie value that yo
 2- adb connect IP:5555    (Connect adb with parrot)
 3- adb shell              (Access mobile device on parrot)
 4- pwd --> ls --> cd sdcard --> ls --> cat secret.txt (If you can't find it there then go to Downloads folder using: cd downloads)
+(for v12 update)
+1- adb shell (to coonect with the device)
+2- sudo adb pull <directory> (for download the files to the system)
+3- ent <file.elf>          (check highest entropy value) 
+4- sha384sum <file.elf>    (calculate sha 384 hash value)
+
 ```
 # Wireshark
 ```
